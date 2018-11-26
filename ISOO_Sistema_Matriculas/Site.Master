@@ -138,7 +138,7 @@
         </div>--%>
 
 
-<%--        <div class="container body-content">--%>
+        <div class="container body-content">
 
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -146,8 +146,8 @@
 <%--            <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
-            </footer>
-        </div>--%>
+            </footer>--%>
+        </div>
     </form>
 
     <asp:PlaceHolder runat="server">

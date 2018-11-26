@@ -8,7 +8,7 @@
         End Get
     End Property
     Public Function cadenaconexion() As String
-        Return "Data Source=.;Initial Catalog=bd_isoo_matriculas;Integrated Security=True"
+        Return "Data Source=VICTOR-HP\SQLEXPRESS;Initial Catalog=BDIsoo;Integrated Security=True"
     End Function
 
 End Class
