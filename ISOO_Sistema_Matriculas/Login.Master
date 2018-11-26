@@ -1,0 +1,62 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Login.master.vb" Inherits="ISOO_Sistema_Matriculas.Login1" %>
+
+<%@ Import Namespace="ISOO_Sistema_Matriculas" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+
+    <asp:PlaceHolder runat="server">
+        <%--<%: Scripts.Render("~/bundles/modernizr") %>--%>
+
+        <%--<%: Styles.Render("~/assets/css") %>--%>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Sistema Matriculas</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <i class="fas fa-user"></i> Administración</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ACTIONS -->
+  <section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%--<%: Scripts.Render("~/bundles/modernizr") %>--%>
+
+        <%: Scripts.Render("~/assets/js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
